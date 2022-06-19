@@ -1,0 +1,27 @@
+a {
+  @apply text-blue-400 hover:text-blue-500 cursor-pointer;
+}
+
+h1 {
+  @apply text-3xl;
+}
+
+.selectContainer {
+  > input:focus {
+    box-shadow: none;
+  }
+
+  .listItem{
+    @apply cursor-pointer;
+
+    > .item {
+      @apply flex flex-col justify-center;
+    }
+  }
+
+  .indicator {
+    @apply grid;
+  }
+
+  @apply shadow-sm focus-within:ring-1 focus-within:ring-gray-300
+}
